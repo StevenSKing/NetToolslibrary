@@ -10,20 +10,7 @@ namespace ExtensionTools.DLL
     /// </summary>
     public class InitiDataBase : DbContext
     {
-        /// <summary>
-        /// APP 下载记录表
-        /// </summary>
-        public DbSet<MobileRecord> MobileRecord { get; set; }
-
-        /// <summary>
-        /// APP 数据信息表
-        /// </summary>
-        public DbSet<AppData> Apps { get; set; }
-
-        /// <summary>
-        /// APP信息表
-        /// </summary>
-        public DbSet<AppInfo> AppInfo { get; set; }
+      
 
         /// <summary>
         /// 用户信息表

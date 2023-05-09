@@ -5,6 +5,10 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetToolslibrary", "NetToolslibrary\NetToolslibrary.csproj", "{AA6A81A6-F540-40B4-BD0F-FE85EE8F869C}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtensionTools", "..\GlobalBase\ExtensionTools.csproj", "{B3E4E56E-DB8A-4D59-91D9-51AAAE224B48}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PublicTools", "..\PublicTools\PublicTools.csproj", "{B9989A6E-4F1C-4D7A-982A-52680F11B483}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{AA6A81A6-F540-40B4-BD0F-FE85EE8F869C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA6A81A6-F540-40B4-BD0F-FE85EE8F869C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA6A81A6-F540-40B4-BD0F-FE85EE8F869C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3E4E56E-DB8A-4D59-91D9-51AAAE224B48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3E4E56E-DB8A-4D59-91D9-51AAAE224B48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3E4E56E-DB8A-4D59-91D9-51AAAE224B48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3E4E56E-DB8A-4D59-91D9-51AAAE224B48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9989A6E-4F1C-4D7A-982A-52680F11B483}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9989A6E-4F1C-4D7A-982A-52680F11B483}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9989A6E-4F1C-4D7A-982A-52680F11B483}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9989A6E-4F1C-4D7A-982A-52680F11B483}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

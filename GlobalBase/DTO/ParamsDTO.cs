@@ -1,4 +1,4 @@
-﻿using GlobalBase.DLL;
+﻿using ExtensionTools.DLL;
 
 namespace ExtensionTools.DTO
 {

@@ -22,8 +22,14 @@
 
   <ItemGroup>
     <Compile Remove="ClientServer\**" />
+    <Compile Remove="MongoModel\DTO\**" />
+    <Compile Remove="RedisModel\**" />
     <EmbeddedResource Remove="ClientServer\**" />
+    <EmbeddedResource Remove="MongoModel\DTO\**" />
+    <EmbeddedResource Remove="RedisModel\**" />
     <None Remove="ClientServer\**" />
+    <None Remove="MongoModel\DTO\**" />
+    <None Remove="RedisModel\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -49,11 +55,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PublicTools\PublicTools.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="MongoModel\DTO\" />
-    <Folder Include="RedisModel\" />
   </ItemGroup>
 
 </Project>
