@@ -1,4 +1,4 @@
-﻿namespace GlobalBase.DLL
+﻿namespace ExtensionTools.DLL
 {
     /// <summary>
     /// 查询实体

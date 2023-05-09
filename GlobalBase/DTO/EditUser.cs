@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace GlobalBase.DTO
+namespace ExtensionTools.DTO
 {
     /// <summary>
     /// 用户修改自身信息

@@ -1,7 +1,7 @@
 ﻿using SqlSugar;
 using System.ComponentModel.DataAnnotations;
 
-namespace GlobalBase.DBSQL
+namespace ExtensionTools.DBSQL
 {
     /// <summary>
     /// 钱包

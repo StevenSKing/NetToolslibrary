@@ -2,11 +2,11 @@
 using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
-using GlobalBase.DTO;
+using ExtensionTools.DTO;
 using MimeKit;
 using SmtpClient = MailKit.Net.Smtp.SmtpClient;
 
-namespace GlobalBase.DLL
+namespace ExtensionTools.DLL
 {
     public class SendMail
     {
@@ -113,7 +113,7 @@ namespace GlobalBase.DLL
             }
             catch (Exception e)
             {
-                msg.Msg = "发送失败： " + (e.Message);
+                msg.Msg = "发送失败： " + e.Message;
                 msg.Status = false;
                 return msg;
             }

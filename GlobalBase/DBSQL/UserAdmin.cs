@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace GlobalBase.DBSQL
+namespace ExtensionTools.DBSQL
 {
     /// <summary>
     /// 管理员账号
@@ -13,7 +13,7 @@ namespace GlobalBase.DBSQL
         /// 用户ID
         /// </summary>
         [Key]
-        public string? TenantID { get; set; } = Guid.NewGuid().ToString("N");
+        public string TenantID { get; set; } = Guid.NewGuid().ToString("N");
 
         /// <summary>
         /// 账号

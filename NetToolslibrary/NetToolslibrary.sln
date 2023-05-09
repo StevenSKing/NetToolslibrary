@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetToolslibrary", "NetToolslibrary\NetToolslibrary.csproj", "{AA6A81A6-F540-40B4-BD0F-FE85EE8F869C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA6A81A6-F540-40B4-BD0F-FE85EE8F869C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA6A81A6-F540-40B4-BD0F-FE85EE8F869C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA6A81A6-F540-40B4-BD0F-FE85EE8F869C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA6A81A6-F540-40B4-BD0F-FE85EE8F869C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76F3F971-C68C-40B1-B0B6-6AA1221D3CBF}
+	EndGlobalSection
+EndGlobal

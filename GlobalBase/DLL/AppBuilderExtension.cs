@@ -6,10 +6,10 @@ using Microsoft.Extensions.Hosting;
 using System;
 using System.Reflection;
 
-namespace GlobalBase.DLL
+namespace ExtensionTools.DLL
 {
     /// <summary>
-    /// 核心代码，非作者请勿触碰！
+    /// 队列自动绑定
     /// </summary>
     public static class AppBuilderExtension
     {

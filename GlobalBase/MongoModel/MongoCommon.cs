@@ -6,7 +6,7 @@ using MongoDB.Entities;
 
 using PublicTools;
 
-namespace GlobalBase.MongoModel;
+namespace ExtensionTools.MongoModel;
 
 public class MongoCommon
 {

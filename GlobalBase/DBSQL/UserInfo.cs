@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using LinqToDB.Mapping;
 
-namespace GlobalBase.DBSQL
+namespace ExtensionTools.DBSQL
 {
     /// <summary>
     /// 用户信息表
@@ -31,7 +31,7 @@ namespace GlobalBase.DBSQL
         /// <summary>
         /// 用户头像
         /// </summary>
-        public string? Header { get; set; }
+        public string Header { get; set; }
 
         /// <summary>
         /// 用户的openid
@@ -41,12 +41,12 @@ namespace GlobalBase.DBSQL
         /// <summary>
         /// 手机号
         /// </summary>
-        public string? Phone { get; set; }
+        public string Phone { get; set; }
 
         /// <summary>
         /// 邮箱
         /// </summary>
-        public string? Email { get; set; }
+        public string Email { get; set; }
 
         /// <summary>
         /// 上级分享码
@@ -86,6 +86,6 @@ namespace GlobalBase.DBSQL
         /// <summary>
         /// 用户备注
         /// </summary>
-        public string? Msg { get; set; }
+        public string Msg { get; set; }
     }
 }

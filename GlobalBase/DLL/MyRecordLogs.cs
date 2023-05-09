@@ -6,7 +6,7 @@ using MongoDB.Driver;
 using MongoDB.Entities;
 using PublicTools;
 
-namespace GlobalBase.DLL
+namespace ExtensionTools.DLL
 {
     /// <summary>
     /// 日志操作

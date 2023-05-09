@@ -1,9 +1,8 @@
 ﻿
-using GlobalBase.DBSQL;
-
+using ExtensionTools.DBSQL;
 using Microsoft.EntityFrameworkCore;
 
-namespace GlobalBase.DLL
+namespace ExtensionTools.DLL
 {
 
     /// <summary>

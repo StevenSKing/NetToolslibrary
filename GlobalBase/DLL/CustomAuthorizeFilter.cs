@@ -1,7 +1,7 @@
 ﻿using Hangfire.Annotations;
 using Hangfire.Dashboard;
 
-namespace GlobalBase.DLL
+namespace ExtensionTools.DLL
 {
     public class CustomAuthorizeFilter : IDashboardAuthorizationFilter
     {

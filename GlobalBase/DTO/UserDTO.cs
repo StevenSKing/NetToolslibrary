@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace GlobalBase.DTO
+namespace ExtensionTools.DTO
 {
     /// <summary>
     /// 简易用户模型
@@ -24,9 +24,10 @@ namespace GlobalBase.DTO
 
 
     //token解析对象
-    public class TokenDTO { 
-    
-      public string alg { get; set; }
+    public class TokenDTO
+    {
+
+        public string alg { get; set; }
 
         public string kid { get; set; }
 
@@ -46,9 +47,9 @@ namespace GlobalBase.DTO
         /// </summary>
         public string sub { get; set; }
         public string auth_time { get; set; }
-       /// <summary>
-       /// openID
-       /// </summary>
+        /// <summary>
+        /// openID
+        /// </summary>
         public string openID { get; set; }
         /// <summary>
         /// 账号
@@ -67,7 +68,7 @@ namespace GlobalBase.DTO
         public string iat { get; set; }
         public List<string> scope { get; set; }
         public List<string> amr { get; set; }
-       
+
     }
 
 

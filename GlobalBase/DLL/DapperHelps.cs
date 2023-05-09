@@ -7,7 +7,7 @@ using Dapper;
 using Microsoft.Data.SqlClient;
 using PublicTools;
 
-namespace GlobalBase.DLL
+namespace ExtensionTools.DLL
 {
     /// <summary>
     /// DepperHelps

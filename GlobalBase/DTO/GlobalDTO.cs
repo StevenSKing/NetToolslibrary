@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 using Microsoft.AspNetCore.Mvc;
 
-namespace GlobalBase.DTO
+namespace ExtensionTools.DTO
 {
     class GlobalDTO
     {

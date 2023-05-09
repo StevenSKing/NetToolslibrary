@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace GlobalBase.DLL
+namespace ExtensionTools.DLL
 {
     /// <summary>
     /// swagger oauth2 验证

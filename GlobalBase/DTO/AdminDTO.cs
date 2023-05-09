@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace GlobalBase.DTO
+namespace ExtensionTools.DTO
 {
     public class AdminDTO
     {
@@ -27,7 +27,7 @@ namespace GlobalBase.DTO
         /// 密码
         /// </summary>
         public string Pwd { get; set; }
-       
+
         /// <summary>
         /// 真实姓名
         /// </summary>

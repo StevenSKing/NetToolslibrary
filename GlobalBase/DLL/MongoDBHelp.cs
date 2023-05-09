@@ -2,7 +2,7 @@
 using MongoDB.Driver;
 using MongoDB.Entities;
 
-namespace GlobalBase.DLL
+namespace ExtensionTools.DLL
 {
     public class MongoDBHelp
     {

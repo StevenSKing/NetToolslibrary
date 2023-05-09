@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using GlobalBase.DTO;
+using ExtensionTools.DTO;
 using PublicTools;
 
-namespace GlobalBase.DLL
+namespace ExtensionTools.DLL
 {
     public class ValidationModels
     {

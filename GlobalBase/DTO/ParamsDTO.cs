@@ -1,6 +1,6 @@
 ﻿using GlobalBase.DLL;
 
-namespace GlobalBase.DTO
+namespace ExtensionTools.DTO
 {
     /// <summary>
     /// 查询通用参数

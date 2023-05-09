@@ -5,10 +5,11 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Coldairarrow.Util;
-using GlobalBase.DTO;
+using ExtensionTools.DTO;
+using GlobalBase.DLL;
 using Microsoft.EntityFrameworkCore;
 
-namespace GlobalBase.DLL
+namespace ExtensionTools.DLL
 {
     public interface ILinqDao<T> where T : class
     {
@@ -223,7 +224,7 @@ namespace GlobalBase.DLL
         public async Task<int> UpdateEntity(T entity, bool IsCommit = true)
         {
             var result = 0;
-            var userm = db.Entry<T>(entity);
+            var userm = db.Entry(entity);
             //把user对象加入上下文,但是没有改变
             using (var dbs = db)
             {
@@ -241,12 +242,12 @@ namespace GlobalBase.DLL
 
                             if (value == null)
                             {
-                                dbs.Entry<T>(entity).Property(property.Name).IsModified = true;
+                                dbs.Entry(entity).Property(property.Name).IsModified = true;
                             }
                         }
                         else
                         {
-                            dbs.Entry<T>(entity).Property(property.Name).IsModified = false;
+                            dbs.Entry(entity).Property(property.Name).IsModified = false;
                         }
 
                     }

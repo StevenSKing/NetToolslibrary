@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace GlobalBase.DTO
+namespace ExtensionTools.DTO
 {
     public class EditAdmin
     {
@@ -14,7 +14,7 @@ namespace GlobalBase.DTO
         /// <summary>
         /// 用户头像
         /// </summary>
-        public string? Header { get; set; }
+        public string Header { get; set; }
 
         /// <summary>
         /// 工号

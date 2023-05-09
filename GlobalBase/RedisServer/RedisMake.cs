@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 using CSRedis;
-
-using GlobalBase.DTO;
+using ExtensionTools.DTO;
 //using GlobalBase.RedisModel;
 
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
-namespace GlobalBase.RedisServer
+namespace ExtensionTools.RedisServer
 {
 
     /// <summary>
@@ -47,7 +47,7 @@ namespace GlobalBase.RedisServer
         /// <summary>
         /// 切换RedisDB
         /// </summary>
-        /// <param name="i">0：验证码；1：账户密码；2：client信息</param>
+        /// <param name="i"></param>
         /// <returns></returns>
         public static CSRedisClient ChangeDB(int i)
         {
@@ -300,7 +300,7 @@ namespace GlobalBase.RedisServer
         /// <returns></returns>
         public string Rincr(string key, int num = 1)
         {
-            long nums = ((long)num);
+            long nums = num;
             return RedisHelper.IncrByAsync(key, nums).ToString();
         }
 
@@ -313,7 +313,7 @@ namespace GlobalBase.RedisServer
         /// <returns></returns>
         public string HRincr(string key, string filed, int num = 1)
         {
-            long nums = ((long)num);
+            long nums = num;
             return RedisHelper.HIncrByAsync(key, filed, nums).ToString();
         }
 
@@ -497,7 +497,31 @@ namespace GlobalBase.RedisServer
             public T value { get; set; }
         }
 
-
+        /// <summary>
+        /// 获取ID池ID，此方法应当放入try中，在超时后会报错
+        /// </summary>       
+        public string GetOrderId(string orderIdKeyName)
+        {
+            var sec = 0;
+            var id = "";
+            lock (this)
+            {
+                id = LPop(orderIdKeyName);
+            }
+            while (string.IsNullOrEmpty(id))
+            {
+                //10秒未获取到订单号，本次提交退出并抛出异常
+                if (sec >= 10)
+                {
+                    throw new Exception("10秒未获取到订单号");
+                }
+                //如果获取结果为空，则表明ID池已被掏空，这里等待1秒后再拿
+                Thread.Sleep(1000);
+                sec++;
+                LPop(orderIdKeyName);
+            }
+            return id;
+        }
 
 
     }

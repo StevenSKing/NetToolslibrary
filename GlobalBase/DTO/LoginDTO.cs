@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using NETCore.Encrypt.Internal;
 
-namespace GlobalBase.DTO
+namespace ExtensionTools.DTO
 {/// <summary>
  /// 登录返回报文
  /// </summary>

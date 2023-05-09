@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Linq;
-using GlobalBase.DTO;
+using ExtensionTools.DTO;
 using LinqToDB.Common;
 using MongoDB.Driver;
 using MongoDB.Entities;
 using PublicTools;
 
-namespace GlobalBase.DLL
+namespace ExtensionTools.DLL
 {
     /// <summary>
     /// 警报系统

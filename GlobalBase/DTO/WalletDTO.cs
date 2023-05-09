@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace GlobalBase.DTO
+namespace ExtensionTools.DTO
 {
     public class WalletDTO
     {

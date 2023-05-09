@@ -6,7 +6,7 @@ using System.Reflection;
 
 using PublicTools;
 
-namespace GlobalBase.DLL;
+namespace ExtensionTools.DLL;
 
 public class DBCommon
 {
@@ -87,7 +87,7 @@ public class OperatorAttribute : Attribute
 {
     public OperatorAttribute(string key, string Operator)
     {
-        this.Key = key;
+        Key = key;
         this.Operator = Operator;
     }
 

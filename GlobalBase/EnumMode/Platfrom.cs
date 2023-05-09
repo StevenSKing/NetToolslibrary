@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GlobalBase.EnumMode
+namespace ExtensionTools.EnumMode
 {
     public class Platfrom
     {

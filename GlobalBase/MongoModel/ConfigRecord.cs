@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using MongoDB.Entities;
 
-namespace GlobalBase.MongoModel
+namespace ExtensionTools.MongoModel
 {
     /// <summary>
     /// 单位时间内统计
