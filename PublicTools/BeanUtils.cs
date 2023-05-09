@@ -5,7 +5,7 @@ namespace PublicTools;
 public class BeanUtils
 {
     /// <summary>
-    /// 复制对象属性值
+    /// 深度复制对象属性值
     /// </summary>
     /// <param name="tIn"></param>
     /// <param name="tOut"></param>

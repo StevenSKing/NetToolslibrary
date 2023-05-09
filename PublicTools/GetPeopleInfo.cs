@@ -132,6 +132,11 @@ namespace PublicTools
 
         }
 
+        /// <summary>
+        /// 检查18位身份证号码
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns></returns>
         private static bool CheckIDCard18(string Id)
 
         {
