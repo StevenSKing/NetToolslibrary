@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <IsPublishable>False</IsPublishable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\GlobalBase.xml</DocumentationFile>
+    <OutputPath>bin\Debug\netcoreapp5.0\</OutputPath>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp5.0\GlobalBase.xml</DocumentationFile>
+    <OutputPath>bin\Release\netcoreapp5.0\</OutputPath>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ClientServer\**" />
+    <EmbeddedResource Remove="ClientServer\**" />
+    <None Remove="ClientServer\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CSRedisCore" Version="3.8.669" />
+    <PackageReference Include="Dapper" Version="2.0.78" />
+    <PackageReference Include="EasyNetQ" Version="7.3.1" />
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Hangfire.Core" Version="1.7.31" />
+    <PackageReference Include="IdHelper" Version="1.4.1" />
+    <PackageReference Include="linq2db" Version="5.1.0" />
+    <PackageReference Include="MailKit" Version="3.4.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="6.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.9" />
+    <PackageReference Include="MongoDB.Driver" Version="2.19.0" />
+    <PackageReference Include="MongoDB.Entities" Version="20.26.5" />
+    <PackageReference Include="NETCore.Encrypt" Version="2.1.0" />
+    <PackageReference Include="SqlSugar.IOC" Version="1.9.0" />
+    <PackageReference Include="SqlSugarCore" Version="5.1.3.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PublicTools\PublicTools.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="MongoModel\DTO\" />
+    <Folder Include="RedisModel\" />
+  </ItemGroup>
+
+</Project>
